@@ -1,0 +1,417 @@
+/* -------------------Pagina principal------------------------------ */
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(90deg, #ff4500, #ff8c00);
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Barra de navegación */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 800px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #ff4500;
+    color: #000;
+}
+
+/* Botón de modo oscuro */
+button {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #ff4500;
+    color: black;
+}
+
+/* Sección destacada */
+.destacado {
+    padding: 50px 20px;
+    background: url('gaming-bg.jpg') no-repeat center center/cover;
+    border-bottom: 4px solid #ff4500;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.destacado h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Artículos */
+.articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+article {
+    background: #222;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(255, 69, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+article img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ff4500;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Modo oscuro */
+.dark-mode {
+    background-color: #121212;
+    color: #bbb;
+}
+
+.dark-mode header {
+    background: linear-gradient(90deg, #222, #444);
+}
+
+.dark-mode nav {
+    background: rgba(34, 34, 34, 0.9);
+}
+
+.dark-mode article {
+    background: #333;
+    box-shadow: 0 4px 8px rgba(255, 69, 0, 0.1);
+}
+
+.dark-mode button {
+    background: #444;
+}
+
+.dark-mode button:hover {
+    background: #ff8c00;
+}
+
+/* --------------------para la pagina de noticias---------------------- */
+
+/* Contenedor de noticias con grid */
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espaciado entre noticias */
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilos de cada noticia */
+.noticia {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 69, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.noticia h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fd0000;
+
+}
+
+.noticia:hover {
+    transform: scale(1.05);
+}
+
+.noticia img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.noticia h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #ff0000;
+}
+
+.noticia p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.noticia a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ff4500;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.noticia a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------pagina de videos ------------------- */
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.review {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 69, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.review:hover {
+    transform: scale(1.05);
+}
+
+.review video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.review h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #ff4500;
+}
+
+.review p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+
+/* ---------------pagina de contactos--------------- */
+
+/* Estilos para la sección de contacto */
+.contacto {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1e1e2e;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contacto h2 {
+    margin-bottom: 10px;
+}
+
+.contacto p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #2a2a3a;
+    color: #fff;
+}
+
+button {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #e84118;
+}
+
+/* -----------------pagina lanzamientos-----------------------/*
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Estilos del header y la navegación */
+header {
+    background-color: #333;
+    padding: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #ffcc00;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Estilos de la sección de lanzamientos */
+.lanzamientos {
+    padding: 40px 20px;
+}
+
+.lanzamientos h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+/* Diseño en cuadrícula para los juegos */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos de cada tarjeta de juego */
+.juego {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.juego:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.3);
+}
+
+.juego h3 {
+    color: #ffcc00;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.juego p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.eventos h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.eventos h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+
